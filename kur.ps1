@@ -6,7 +6,7 @@ $ErrorActionPreference = "Continue"
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $here
 
-$repo = "ysfsturan/bit-chord-party-server"
+$repo = "ysfsturan/BitChord_Party_Server"
 $cfUrl = "https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe"
 $jamUrl = "https://github.com/$repo/releases/latest/download/bitchord-jam.exe"
 
@@ -56,7 +56,7 @@ function Get-LatestReleaseSha256 {
     param([string]$Repo, [string]$AssetName)
     try {
         $apiUrl = "https://api.github.com/repos/$Repo/releases/latest"
-        $headers = @{ "User-Agent" = "bit-chord-party-server-installer" }
+        $headers = @{ "User-Agent" = "BitChord_Party_Server-installer" }
         $rel = Invoke-RestMethod -Uri $apiUrl -Headers $headers -TimeoutSec 10 -UseBasicParsing -ErrorAction Stop
         foreach ($asset in $rel.assets) {
             if ($asset.name -eq $AssetName -and $asset.digest -match "^sha256:([0-9a-fA-F]{64})$") {
