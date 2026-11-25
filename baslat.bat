@@ -1,6 +1,6 @@
 @echo off
 title BitChord Parti Sunucusu
-powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0baslat.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0baslat.ps1" %*
 echo.
 echo Pencere kapaniyor...
 %SystemRoot%\System32\timeout.exe /t 3 >nul 2>&1

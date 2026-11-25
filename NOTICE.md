@@ -29,8 +29,7 @@ Bunun dışında sunucu kodunda hiçbir değişiklik yapılmamıştır.
 
 ## Bu depoda yazılan kod
 
-`kur.bat`, `kur.ps1`, `baslat.bat`, `baslat.ps1`, `durdur.bat`, `durdur.ps1`,
-`sunucu-baslat.bat`, `tunel-baslat.bat` ve `README.md` bu depoya aittir ve GPL-3.0 ile lisanslanmıştır.
+`kur.bat`, `kur.ps1`, `baslat.bat`, `baslat.ps1`, `durdur.bat`, `durdur.ps1` ve `README.md` bu depoya aittir ve GPL-3.0 ile lisanslanmıştır.
 
 ## Ticari marka
 
